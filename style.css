@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cadetblue;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+div.counter{
+    position:fixed;
+    top:10vh;
+    left:0;
+    width:100vw;
+    text-align: center;
+}
+
+.hamster{
+    margin-top:20vh;
+    height:220px;
+    width:250px;
+    background-image: url('hamster.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: move linear infinite;
+    animation-duration: 10s;
+}
+
+@keyframes move {
+    0%   {transform:translateX(0px)}
+    50%   {transform:translateX(1100px)}
+    100%{transform: translateZ(-1100px)}
+  }
